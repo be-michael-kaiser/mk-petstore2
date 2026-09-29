@@ -1,0 +1,16 @@
+@import url('./views/pets-view.css');
+
+html {
+    --mk-brand: #2d6cdf;
+}
+
+.mk-header {
+    background: var(--mk-brand);
+    color: white;
+    padding: var(--lumo-space-s) var(--lumo-space-m);
+}
+
+.mk-header a,
+.mk-header h1 {
+    color: white;
+}

@@ -1,0 +1,113 @@
+lockfile_version: '1'
+apm_version: 0.32.0
+dependencies:
+- repo_url: be-michael-kaiser/custom_apm_mkaiser
+  name: apm-sample-package
+  host: github.com
+  resolved_commit: d65cb40a99285959d5d540b6f6fdad7d3b22beef
+  resolved_ref: v1.0.0
+  version: 1.0.0
+  package_type: apm_package
+  deployed_files:
+  - .agents/skills/mkaiser-style-checker
+  - .agents/skills/mkaiser-style-checker/SKILL.md
+  - .github/agents/mkaiser-design-reviewer.agent.md
+  - .github/instructions/mkaiser-design-standards.instructions.md
+  - .github/prompts/mkaiser-accessibility-audit.prompt.md
+  - .github/prompts/mkaiser-design-review.prompt.md
+  deployed_file_hashes:
+    .agents/skills/mkaiser-style-checker/SKILL.md: sha256:1142700284d253c15e561434362ae6203db08e41ef07e7082386df3651738829
+    .github/agents/mkaiser-design-reviewer.agent.md: sha256:a37aa586fac1e34de556d5316d18cbc7dc55cc9886c1601746ea7e3661c472f3
+    .github/instructions/mkaiser-design-standards.instructions.md: sha256:6f5d994d6437416e14e4ca5540f4d1cf06fad079728a1419acfb1dd7038ec38d
+    .github/prompts/mkaiser-accessibility-audit.prompt.md: sha256:c3382c6b7ac6ba38cf66d345923be79c5a46b8783a0d33aac457ff60f1b6597a
+    .github/prompts/mkaiser-design-review.prompt.md: sha256:f10919f07eec83c62c7912e318382b472ad27eb1c22c11525b813522960e8e06
+  content_hash: sha256:dcfd4eefbf461ded2c723fc9cd0c0edfe3b6a5b464bad127428c7bf99881447b
+- repo_url: github/awesome-copilot
+  name: review-and-refactor
+  host: github.com
+  resolved_commit: 997e95a6e42869c350f8ca6ec4c066287697c9f0
+  version: unknown
+  virtual_path: skills/review-and-refactor
+  is_virtual: true
+  depth: 2
+  resolved_by: be-michael-kaiser/custom_apm_mkaiser
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/review-and-refactor
+  - .agents/skills/review-and-refactor/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/review-and-refactor/SKILL.md: sha256:95b48ed4b137777ddc87b77cb0873ed7f485141a517825e71af1a984cf5a6cd6
+  content_hash: sha256:9236d06a1500089ddb46975b866e9a63478e502afe7095b1980c618678a7c7fe
+deployments:
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/mkaiser-style-checker
+  runtime: null
+  scope: project
+  owners:
+  - be-michael-kaiser/custom_apm_mkaiser
+  active_owner: be-michael-kaiser/custom_apm_mkaiser
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/mkaiser-style-checker/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - be-michael-kaiser/custom_apm_mkaiser
+  active_owner: be-michael-kaiser/custom_apm_mkaiser
+  content_hash: sha256:1142700284d253c15e561434362ae6203db08e41ef07e7082386df3651738829
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/review-and-refactor
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/review-and-refactor
+  active_owner: github/awesome-copilot/skills/review-and-refactor
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/review-and-refactor/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/review-and-refactor
+  active_owner: github/awesome-copilot/skills/review-and-refactor
+  content_hash: sha256:95b48ed4b137777ddc87b77cb0873ed7f485141a517825e71af1a984cf5a6cd6
+- kind: project-relative
+  target: copilot
+  value: .github/agents/mkaiser-design-reviewer.agent.md
+  runtime: null
+  scope: project
+  owners:
+  - be-michael-kaiser/custom_apm_mkaiser
+  active_owner: be-michael-kaiser/custom_apm_mkaiser
+  content_hash: sha256:a37aa586fac1e34de556d5316d18cbc7dc55cc9886c1601746ea7e3661c472f3
+- kind: project-relative
+  target: copilot
+  value: .github/instructions/mkaiser-design-standards.instructions.md
+  runtime: null
+  scope: project
+  owners:
+  - be-michael-kaiser/custom_apm_mkaiser
+  active_owner: be-michael-kaiser/custom_apm_mkaiser
+  content_hash: sha256:6f5d994d6437416e14e4ca5540f4d1cf06fad079728a1419acfb1dd7038ec38d
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/mkaiser-accessibility-audit.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - be-michael-kaiser/custom_apm_mkaiser
+  active_owner: be-michael-kaiser/custom_apm_mkaiser
+  content_hash: sha256:c3382c6b7ac6ba38cf66d345923be79c5a46b8783a0d33aac457ff60f1b6597a
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/mkaiser-design-review.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - be-michael-kaiser/custom_apm_mkaiser
+  active_owner: be-michael-kaiser/custom_apm_mkaiser
+  content_hash: sha256:f10919f07eec83c62c7912e318382b472ad27eb1c22c11525b813522960e8e06
