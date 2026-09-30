@@ -19,11 +19,16 @@ this app owns its own data via **Spring Data JPA** and an in-memory **H2** datab
 
 ## Running
 
+From this directory, start the Vaadin application with:
+
 ```bash
 mvn spring-boot:run
 ```
 
 Then open <http://localhost:8081>.
+
+The application uses an in-memory H2 database, so its data is reset when the
+application stops.
 
 ## Testing
 
